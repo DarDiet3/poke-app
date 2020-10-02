@@ -1,0 +1,150 @@
+body {
+    
+    background-image: url("https://external-preview.redd.it/57s0y7t3s8UYJnJ5XLnQc4onfbE8xyBvB-pQrAjigHA.jpg?auto=webp&s=440f091239e45c9989101993ef66315d0a34f9ea");
+    background-color: #000000;
+    height: 100vh;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size: 48px;
+}
+
+h2 {
+    color: black;
+    margin: 50px 0 0 0;
+}
+
+.info {
+    color: #FFDE00;
+}
+
+a {
+    text-decoration: none;
+}
+
+.new {
+    border: #b3a125 solid 2px;
+    border-radius: 8px;
+    background: #FFDE00;
+    padding: 8px;
+    color: black;
+}
+
+.new:visited {
+    color: black;
+}
+
+.new:hover {
+    color: black;
+    background: #f3eaad;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-indent: -25px;
+}
+
+.pokemon_actions {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    margin: 5px;
+    text-indent: 5px;
+}
+
+.edit, .edit:visited, .edit:hover {
+    color: white;
+}
+
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    line-height: 1.5em;
+    text-decoration: underline;
+}
+
+.delete {
+    background-color: #FF0000;
+    color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.home, .home:visited, .home:hover {
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.editForm {
+    color: white;
+}
+
+.player_index {
+    background:black;
+    background-image: url("https://wallpaperaccess.com/full/24959.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-right: 25%;
+}
+
+.player_index a, a:visited {
+    background:  #ffde00;
+    border: solid 4px black;
+    border-radius: 12px;
+    color: black;
+    padding: 8px;
+}
+
+.player_info {
+    background:#484059;
+    background-image: url("https://mcdn.wallpapersafari.com/medium/4/38/mOfcQ2.png");
+    background-size: 100%;
+    background-position: bottom 25% right;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.player_info h1 {
+    color: white;
+}
+.player_info form {
+    color: white;
+}
+.player_info form input[type="submit"] {
+    background:  #ffde00;
+    border: solid 4px black;
+    border-radius: 12px;
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#errorMessage {
+    font-size: 24px;
+    color: red;
+}
+nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav form {
+    margin-left: 50px;
+}
+

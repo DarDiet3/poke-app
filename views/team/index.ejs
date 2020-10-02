@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel = "stylesheet" href = "/css/style.css" />
+</head>
+<body class = "team">
+    <h1>Teams Playing Pokemon</h1>
+    <ul>
+        <%for(let i=0; i<team.length; i++) {%>
+            <li>
+                <a href = "/team/<%=team[i].id%>"><%=team[i].name%></a>
+            </li>
+        <% } %>
+    </ul>
+    <div>
+        <a href = "/team/newTeam">Add a Team</a>
+    </div>
+</body>
+</html>

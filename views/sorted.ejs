@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%=pokemon[0].type%> type</title>
+    <link rel = "stylesheet" href = "/css/style.css" />
+</head>
+<body>
+    <h2>Your <%=pokemon[0].type%> Pokemon</h2>
+    <ul class = "pokemon">
+        <% for(let i = 0; i<pokemon.length; i++) { %>
+            <li>
+                <a href = "/pokemon/<%=pokemon[i].id%>" class = "name"><%=pokemon[i].name%></a>
+            </br>
+            <div class = "pokemon_actions">    
+                <a href = "/pokemon/<%=pokemon[i].id%>/edit" class = "edit">Edit</a>
+                <form action = "/pokemon/<%=pokemon[i].id%>?_method=DELETE" method = "POST" >
+                    <input type = "submit" value = "Delete Pokemon" class = "delete">
+                </form>
+            </div>
+        </li>
+    </br>
+    <% } %>
+    </ul>
+    <a href = "/pokemon">See All</a>
+</body>
+</html>

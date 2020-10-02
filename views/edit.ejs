@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Edit <%=pokemon.name%></title>
+    <link rel = "stylesheet" href = "/css/style.css" />
+</head>
+<body>
+    <h1>Edit Your Pokemon</h1>
+    <form action = "/pokemon/<%=pokemon.id%>?_method=PUT" method = "POST" class = "editForm">
+        Name: <input type = "text" name = "name" value = "<%=pokemon.name%>" />
+        Image: <input type = "text" name = "img" value = "<%=pokemon.img%>" />
+        <input type = "submit" value = "Update Pokemon" class = "new"/>
+    </form>
+</body>
+</html>

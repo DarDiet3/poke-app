@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pokemon.name%></title>
+    <link rel = "stylesheet" href = "/css/style.css" />
+</head>
+<body>
+    <h1>Pokemon Stats Sheet</h1>
+
+    <h2 class = "info">
+        This is <%=pokemon.name%>. They are a <%=pokemon.type%> type pokemon.
+    </h2>
+
+    <img alt = "Picture of <%=pokemon.name%>" src = "<%=pokemon.img%>">
+</br>
+    <div class = "pokemon_actions">    
+        <a href = "/pokemon/<%=pokemon.id%>/edit" class = "edit">Edit</a>
+        <form action = "/pokemon/<%=pokemon.id%>?_method=DELETE" method = "POST" >
+            <input type = "submit" value = "Delete Pokemon" class = "delete">
+        </form>
+    </div>
+</br>
+    <div>
+        <h2>Players who have caught <%=pokemon.name%></h2>
+            <% for(let i = 0; i <pokemon.Players.length; i++) {%>
+                <li>
+                    <%=pokemon.Players[i].name%>
+                </li>
+            <% } %>
+    </div>
+<br>
+<br>
+<br>
+    <a href = "/pokemon/" class = "home">Go Home</a>
+</body>
+</html>
